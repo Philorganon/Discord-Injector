@@ -1,4 +1,4 @@
-# Discord CSS Injector Ultimate
+# Discord CSS Injector
 
 ## Professional Discord CSS Theme Injector with live editing, 13 built-in themes, and a Monaco-based editor.
 
@@ -31,7 +31,7 @@ You may be automatically logged out, we recommend remembering your data to log i
 
 ```bash
 # Clone the repository
-git clone https://github.com/luaapy/Discord-Injector.git
+git clone https://github.com/Philorganon/Discord-Injector.git
 cd Discord-Injector
 
 # Install dependencies
