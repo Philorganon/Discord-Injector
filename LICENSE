@@ -1,21 +1,49 @@
-MIT License
+LICENSE
 
-Copyright (c) 2026 nosan
+Copyright (c) 2025 Philorganon
+All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+TERMS AND CONDITIONS
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. PERMISSION
+   Permission is granted, free of charge, to any person obtaining
+   a copy of this software to use, copy, modify, and distribute
+   this software for NON-COMMERCIAL purposes only, subject to the
+   following conditions:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. ATTRIBUTION (REQUIRED)
+   Any use, modification, or distribution of this software — in
+   original or modified form — MUST include the following credit
+   in a visible location (README, about page, or source header):
+
+       "Based on Discord CSS Injector by Philorganon
+        https://github.com/Philorganon/Discord-Injector"
+
+   Removing or obscuring attribution is strictly prohibited.
+
+3. NON-COMMERCIAL USE ONLY
+   This software may NOT be sold, sublicensed, or included in any
+   product or service that is sold or monetized in any form,
+   including but not limited to:
+   - Paid downloads or access
+   - Subscription-based services
+   - Bundled commercial software
+   - Reselling as-is or modified
+
+   For commercial licensing, contact the author directly.
+
+4. NO MISREPRESENTATION
+   You may not claim authorship of the original software or present
+   it as your own work. Modified versions must be clearly marked
+   as modified.
+
+5. DISCLAIMER
+   THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+   THE AUTHOR IS NOT RESPONSIBLE FOR ANY DAMAGES, ACCOUNT
+   SUSPENSIONS, OR CONSEQUENCES ARISING FROM USE OF THIS SOFTWARE.
+   USE AT YOUR OWN RISK.
+
+   This software is not affiliated with or endorsed by Discord Inc.
+
+---
+For commercial use or other inquiries, contact: [email/github kamu]
