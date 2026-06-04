@@ -27,6 +27,8 @@ export const themes = {
     'nord': loadTheme('nord'),
     'dracula': loadTheme('dracula'),
     'gruvbox': loadTheme('gruvbox'),
+    'nsn': loadTheme('nsn'),
+    'hutao': loadTheme('hutao'),
 };
 
 export function getThemeNames() {

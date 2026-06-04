@@ -1,0 +1,26 @@
+{
+    "name": "theme-scheduler",
+    "displayName": "Theme Scheduler",
+    "version": "1.0.0",
+    "author": "Discord Injector",
+    "description": "Automatically switch themes based on time of day",
+    "hooks": [
+        "onDiscordStart"
+    ],
+    "config": {
+        "enabled": true,
+        "schedules": [
+            {
+                "theme": "dark-purple",
+                "startTime": "18:00",
+                "endTime": "06:00"
+            },
+            {
+                "theme": "light-minimal",
+                "startTime": "06:00",
+                "endTime": "18:00"
+            }
+        ]
+    },
+    "dependencies": []
+}

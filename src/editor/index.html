@@ -2,16 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Discord Injector Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord CSS Injector — Pro Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.js">
+    </script>
 </head>
 <body>
-    <div class="header">
-        <h3>CSS Injector</h3>
-        <button id="saveBtn" onclick="save()">Save (Ctrl+S)</button>
-    </div>
+    <header class="header">
+        <div class="header-left">
+            <div class="logo-icon" aria-hidden="true">
+                <!-- CSS icon -->
+                <svg viewBox="0 0 24 24">
+                    <polyline points="4 4 20 4 20 8 12 16 4 8 4 4"/>
+                    <polyline points="4 12 20 12 20 16 12 20 4 16 4 12"/>
+                </svg>
+            </div>
+            <div class="header-info">
+                <span class="header-title">CSS Injector</span>
+                <span class="header-subtitle">Discord Theme Editor</span>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <span class="connection-badge connecting" id="connectionBadge" title="WebSocket status">
+                <span class="pulse-dot"></span>
+                <span id="connectionLabel">Connecting</span>
+            </span>
+            <button class="btn btn-primary" id="saveBtn" onclick="save()" title="Save (Ctrl+S)">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/>
+                    <polyline points="17 21 17 13 7 13 7 21"/>
+                    <polyline points="7 3 7 8 15 8"/>
+                </svg>
+                Save
+                <span style="opacity:0.5;font-size:0.65rem;margin-left:2px;">Ctrl+S</span>
+            </button>
+        </div>
+    </header>
     <div id="container"></div>
+    <div class="toast-container" id="toastContainer"></div>
     <script src="editor.js"></script>
 </body>
 </html>

@@ -1,0 +1,141 @@
+/**
+ * @name Custom Loading Screen
+ * @description Beautiful loading screen for Discord
+ * @version 1.0.0
+ */
+
+/* ===== MAIN LOADING SCREEN ===== */
+[class*="splashScreen"],
+[class*="splash"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    animation: gradientShift 5s ease infinite !important;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== LOADING TEXT ===== */
+[class*="splashScreen"] [class*="text"],
+[class*="splash"] [class*="loadingText"] {
+    color: #ffffff !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
+}
+
+/* Change loading text */
+[class*="splashScreen"]::after,
+[class*="splash"]::after {
+    content: "Loading Your Custom Discord... ✨" !important;
+    position: absolute !important;
+    bottom: 100px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    color: rgba(255,255,255,0.9) !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    animation: fadeInOut 2s ease-in-out infinite !important;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* ===== DISCORD LOGO ON LOADING ===== */
+[class*="splashScreen"] svg,
+[class*="splash"] svg {
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.3)) !important;
+    animation: pulse 2s ease-in-out infinite !important;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* ===== LOADING BAR ===== */
+[class*="progressBar"],
+[class*="loadingBar"] {
+    background: rgba(255,255,255,0.2) !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+[class*="progressBar"] [class*="progress"],
+[class*="loadingBar"] [class*="fill"] {
+    background: linear-gradient(90deg, #fff 0%, #a8edea 100%) !important;
+    box-shadow: 0 0 20px rgba(255,255,255,0.5) !important;
+    animation: shimmer 1.5s ease-in-out infinite !important;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+/* ===== PARTICLES EFFECT ===== */
+[class*="splashScreen"]::before {
+    content: "" !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-image: 
+        radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px),
+        radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px) !important;
+    background-size: 50px 50px !important;
+    background-position: 0 0, 25px 25px !important;
+    animation: particleMove 20s linear infinite !important;
+}
+
+@keyframes particleMove {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(50px); }
+}
+
+/* ===== CUSTOM MESSAGES ===== */
+/* Random loading tips */
+[class*="splashScreen"] [class*="tips"]::before {
+    content: "💡 Tip: Press Ctrl+Shift+I to open DevTools!" !important;
+}
+
+/* ===== THEME VARIANTS ===== */
+
+/* Dark Purple Theme */
+.loader-purple [class*="splashScreen"] {
+    background: linear-gradient(135deg, #1e1e2e 0%, #2d2b55 100%) !important;
+}
+
+/* Cyberpunk Theme */
+.loader-cyber [class*="splashScreen"] {
+    background: linear-gradient(135deg, #0f0f23 0%, #1a0933 100%) !important;
+}
+
+.loader-cyber [class*="splashScreen"]::after {
+    content: "INITIALIZING NEURAL LINK... █▓▒░" !important;
+    font-family: 'Courier New', monospace !important;
+    color: #00ff9f !important;
+    text-shadow: 0 0 10px #00ff9f !important;
+}
+
+/* Minimal Theme */
+.loader-minimal [class*="splashScreen"] {
+    background: #ffffff !important;
+}
+
+.loader-minimal [class*="splashScreen"]::after {
+    color: #000000 !important;
+}
+
+/* Gaming Theme */
+.loader-gaming [class*="splashScreen"] {
+    background: linear-gradient(135deg, #ff0080 0%, #ff8c00 50%, #40e0d0 100%) !important;
+    background-size: 400% 400% !important;
+}
+
+.loader-gaming [class*="splashScreen"]::after {
+    content: "🎮 LOADING GAME... READY PLAYER ONE!" !important;
+}

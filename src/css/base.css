@@ -37,8 +37,15 @@
     z-index: 1000 !important;
 }
 
+/* Position User Popout to the right side of the screen */
 [class*="userPopout-"] {
+    position: fixed !important;
+    top: 50% !important;
+    right: 16px !important;
+    transform: translateY(-50%) !important;
+    left: auto !important;
     z-index: 100 !important;
+    max-height: 80vh !important;
 }
 
 * {

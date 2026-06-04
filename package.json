@@ -1,17 +1,39 @@
 {
   "name": "discord-injector-ultimate",
-  "version": "1.0.0",
-  "description": "Modular Discord CSS Injector",
+  "version": "2.0.0",
+  "description": "Professional Discord CSS Injector with Plugin System",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "discord-injector": "./index.js"
+  },
   "scripts": {
     "start": "node index.js",
-    "install-dep": "npm install ps-node chokidar ws express commander chalk ora inquirer fs-extra open"
+    "dev": "node --watch index.js",
+    "test": "node index.js test",
+    "install-themes": "node index.js install",
+    "editor": "node index.js editor",
+    "restore": "node index.js restore",
+    "status": "node index.js status"
+  },
+  "keywords": [
+    "discord",
+    "css",
+    "injector",
+    "theme",
+    "customization",
+    "betterdiscord"
+  ],
+  "author": "Discord Injector Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "chalk": "^4.1.2",
     "chokidar": "^3.5.3",
     "commander": "^11.1.0",
+    "discord-rpc": "^4.0.1",
     "express": "^4.18.2",
     "fs-extra": "^11.1.1",
     "inquirer": "^8.2.5",

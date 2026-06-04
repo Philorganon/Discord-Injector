@@ -1,0 +1,19 @@
+{
+    "name": "auto-backup-gist",
+    "displayName": "Auto Backup to GitHub Gist",
+    "version": "1.0.0",
+    "author": "Discord Injector",
+    "description": "Automatically backup your CSS to a GitHub Gist",
+    "hooks": [
+        "afterInject",
+        "onCssChange"
+    ],
+    "config": {
+        "enabled": true,
+        "gistId": "",
+        "token": "",
+        "autoBackupOnChange": true,
+        "backupInterval": 300000
+    },
+    "dependencies": []
+}
